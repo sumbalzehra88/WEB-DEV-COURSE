@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating Forms-TA</title>
+</head>
+<body>
+    <div
+<form action = "post" >
+    <label for = "username">Enter your username:</label>
+    <input type = "text" id = "username" name = "username" placeholder = "Enter your name" required />
+    <input type = "text" id = "gender" name = "gender" placeholder = "Enter your gender" autofocus required />
+    <label for = "male">Male</label>
+    <input type = "radio" id = "male" name = "gender" value = "male" required />
+    <label for = "female">Female</label>
+    <input type = "radio" id = "female" name = "gender" value = "female" required />
+    <label for = "others">others</label>
+    <input type = "radio" id = "others" name = "gender" value = "other" required />
+</div>
+
+<div>
+    <label for = "textarea">Enter your message:</label>
+    <textarea id = "textarea" name = "textarea" rows = "4" cols = "50" placeholder = "Type your message here..." required></textarea>
+</div>
+<div> 
+    <label for = "submission">Submit your response:</label>
+    <input type = "submit" id = "submission" name = "submission" value = "Submit" />
+    <br>
+</div>
+
+<div>
+    <select id = "dropdown" name = "dropdown" required>
+        <option value = "option1">Option 1</option>
+        <option value = "option2">Option 2</option>
+        <option value = "option3">Option 3</option>
+        <option value = "option4">Option 4</option>
+        <option value = "others">others</option>
+    </select>
+</div>
+
+
+</form>
+</body>
+</html>
