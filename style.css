@@ -6,3 +6,26 @@ td{
     border: 2px solid black;
 
 }
+
+p{
+    background-color: aquamarine;
+}
+
+a{
+    background-color: red;
+    
+}
+.red{
+    color: red;
+}
+.bg-yellow{
+    background-color: yellow;
+}
+#first-div{
+    background-color: blue;
+    color: white;
+}
+#first-span{
+    background-color: red;
+    color: white;
+}
