@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS SELECTORS</title>
+</head>
+<body>
+    <main class="first-child">
+    <p> This is a paragraph inside the main block. </p>
+    <p> This is another paragraph inside the main block. </p>
+    </main>
+    <style>
+        div{
+
+            background-color: lightblue;
+           
+        }
+
+        .red{
+            background-color: red;
+        }
+        #green{
+            background-color: green;
+        }
+        div > p{
+            color: purple;
+            background-color: yellow;
+        }
+
+        div p{
+            color: blue;
+            background-color: pink;
+        }
+        *{
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+        }
+        a:visited{
+            color: pink;
+        }
+        a:link{
+            color: green;
+        }
+        a:active{
+            background-color: yellow;
+        }
+        a:hover{
+            color: red;
+        }
+        .first-child:first-child{
+            background-color: orange;
+        }
+    </style>
+</body>
+<p> this is a red div </p>
+<div class="red"> I am a div
+    <article><p>  I am a paragraph inside the div block. </p> </article></div>
+
+<div id = "green"> I am another div</div>
+<div><a href="https://www.google.com">Google link</a></div>
+
+</html>
