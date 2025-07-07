@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Designing a Card - CSS and HTML</title>
+  <style>
+    body {
+      background-color: rgb(255, 250, 238);
+      height: 150vh;
+      display: flex;
+      justify-content: center;
+      margin: 20px;
+    }
+
+    .card {
+      background-color: rgb(240, 208, 175);
+      height: 600px; /* fixed height for consistent layout */
+      width: 400px;
+      padding: 10px;
+      border-radius: 30px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .picture {
+      background-image: url("https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
+      width: 400px;
+      height: 300px;
+      margin: 0 auto;
+      border-radius: 30px;
+      background-size: cover;
+      background-position: center;
+    }
+    .box1{
+        position: absolute;
+        bottom: 255px; /* Adjusted to fit within the card */
+        left: 15%;
+        transform: translateX(-50%);
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 10px;
+        border-radius: 30px;
+        text-align: center;
+        font-size: 18px;
+        color: rgb(221, 127, 19);
+        height: 15px;
+        font: 400 20px url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+        outline: 1px solid rgba(250, 152, 47, 0.361);
+        width: 50px;
+    }
+    .box2{
+        position: absolute;
+        bottom: 255px; /* Adjusted to fit within the card */
+        left:35%;
+        transform: translateX(-50%);
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 10px;
+        border-radius: 30px;
+        text-align: center;
+        font-size: 18px;
+        color: rgb(221, 127, 19);
+        height: 15px;
+        font: 400 20px url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+        outline: 1px solid rgba(250, 152, 47, 0.361);
+        width: 50px;
+    }
+    .box3{
+        position: absolute;
+        bottom: 20px; /* Adjusted to fit within the card */
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 10px;
+        border-radius: 30px;
+        text-align: center;
+        font-size: 18px;
+        color: rgb(221, 127, 19);
+        height: 15px;
+        font: 400 20px url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+        outline: 1px solid rgba(250, 152, 47, 0.361);
+        width: 80px;
+    }
+    .heading{
+        position: relative;
+        bottom: -50px; /* Adjusted to fit within the card */
+        left: 40%;
+        transform: translateX(-50%);
+        color: rgb(0, 0, 0);
+        font-size: 30px;
+        font-weight: bold;
+        text-align: center;
+        font-family: 'noto-serif', sans-serif;
+    }
+    .description {
+      position: absolute;
+      left: 8%;
+      right: 8%;
+      bottom: 85px;
+      color: rgb(0, 0, 0);
+      font-size: 16px;
+      text-align: justify;
+      display: block;
+      font-family: 'noto-serif', sans-serif;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      line-height: 1.5;
+      max-height: 120px; /* Adjust as needed */
+      padding-right: 10px;
+    }
+    
+   
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="picture"></div>
+    <div class = "box1">Nature</div>
+    <div class = "box2">Lake</div>
+    <h1 class = "heading"> Welcome To Nature</h1><!-- Other card content goes here -->
+    <p class = "description">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint consectetur iure explicabo maxime a dignissimos ex quo suscipit facere libero.
+    </p>
+    <div class = "box3">Read Here</div>
+  </div>
+ 
+</body>
+</html>
