@@ -4,8 +4,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Flexbox</title>
+    <style>
+        .container{
+            border: 2px solid black;
+            display: grid;
+            height : 100vh;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-content: center;
+            flex-flow: row wrap;
+            gap: 10px;
+            grid-template-columns: 1fr 2fr 1fr;
+            grid-template-rows: 100px 100px 100px;
+            
+            
+
+        }
+        .items{
+            background-color: lightblue;
+            border: 1px solid black;
+            width: 50px;
+            height: 50px;
+            margin: 10px;
+            flex-grow: 2px;
+            flex-shrink: 3px;
+            transform: rotatez(10deg);
+            transform: skewY(10deg);
+            translate: 10px 10px;
+            animation: identifier, identifier-2 2s infinite alternate;
+            animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+            animation-duration: reverse;
+            
+            
+        }
+        .items-1{
+            grid-column: 1/2;
+            grid-row: 1/2;
+        }
+        @keyframes identifier {
+            from {
+                background-color: lightblue;
+                transform: rotate(50deg
+                skewY(10deg));
+            }
+            to {
+                background-color: lightcoral;
+                transform: rotate(0deg) skewY(0deg);
+            }
+            
+        }
+        @keyframes identifier-2 {
+            from {
+                background-color: lightblue;
+                transform: rotate(90deg) skewY(10deg);
+            }
+            to {
+                background-color: lightcoral;
+                transform: rotate(90deg) skewY(0deg);
+            }
+        }
+    </style>
 </head>
 <body>
-    
+    <main>
+        <div class = "container">
+            <div class="items">1</div>
+            <div class="items">2</div>
+            <div class="items">3</div>
+            <div class="items items-1">4</div>
+            <div class="items">5</div>
+            <div class="items">6</div>
+            
+            
+        </div>
+    </main>
 </body>
 </html>
